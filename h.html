@@ -1,0 +1,98 @@
+Creating a cookie in PHP is straightforward. Below are the steps and an example to guide you through the process of setting, accessing, and deleting cookies.
+
+### Setting a Cookie
+
+To set a cookie in PHP, you use the setcookie() function. This function must be called before any output is sent to the browser.
+
+<?php
+// Set a cookie named "user" with the value "John Doe" that expires in 1 hour
+setcookie("user", "John Doe", time() + 3600, "/");
+
+// To make the cookie accessible only via HTTPS
+// setcookie("user", "John Doe", time() + 3600, "/", "", true, true);
+?>
+
+#### Parameters for setcookie()
+
+- *name*: The name of the cookie.
+- *value*: The value of the cookie.
+- *expire*: The expiration time (in Unix timestamp). Use time() + (seconds) to set the expiration.
+- *path*: The path on the server where the cookie is available. Use "/" to make it available across the entire domain.
+- *domain* (optional): The (sub)domain where the cookie is available.
+- *secure* (optional): If true, the cookie is sent only over secure HTTPS connections.
+- *httponly* (optional): If true, the cookie is accessible only through the HTTP protocol (not by JavaScript).
+
+### Accessing a Cookie
+
+To access a cookie, use the $_COOKIE superglobal array.
+
+<?php
+if(isset($_COOKIE["user"])) {
+    echo "User is: " . $_COOKIE["user"];
+} else {
+    echo "User is not set.";
+}
+?>
+
+### Deleting a Cookie
+
+To delete a cookie, set its expiration time to a past time.
+
+<?php
+// Delete the cookie by setting its expiration time to a past time
+setcookie("user", "", time() - 3600, "/");
+?>
+
+### Example: Complete Cookie Handling
+
+Here’s a complete example that includes setting, accessing, and deleting a cookie.
+
+#### Setting a Cookie (set_cookie.php)
+
+<?php
+// Set a cookie named "username" with the value "JohnDoe" that expires in 1 day
+setcookie("username", "JohnDoe", time() + (86400 * 1), "/"); // 86400 = 1 day
+echo "Cookie 'username' is set.";
+?>
+
+#### Accessing a Cookie (get_cookie.php)
+
+<?php
+if(isset($_COOKIE["username"])) {
+    echo "Username is: " . $_COOKIE["username"];
+} else {
+    echo "Username cookie is not set.";
+}
+?>
+
+#### Deleting a Cookie (delete_cookie.php)
+
+<?php
+// Delete the cookie by setting its expiration time to a past time
+setcookie("username", "", time() - 3600, "/");
+echo "Cookie 'username' is deleted.";
+?>
+
+### Using Cookies with Secure and HttpOnly Flags
+
+For enhanced security, you can set cookies with the secure and HttpOnly flags. This ensures that cookies are only sent over HTTPS and are not accessible via JavaScript.
+
+#### Setting a Secure and HttpOnly Cookie
+
+<?php
+// Set a cookie named "user" with the value "John Doe" that expires in 1 hour
+// The cookie is only sent over HTTPS and is not accessible via JavaScript
+setcookie("user", "John Doe", time() + 3600, "/", "", true, true);
+?>
+
+### Summary
+
+- *Setting a Cookie*: Use setcookie() to set a cookie before any output is sent to the browser.
+- *Accessing a Cookie*: Use the $_COOKIE superglobal array.
+- *Deleting a Cookie*: Set the cookie's expiration time to a past time using setcookie().
+
+By following these steps, you can effectively manage cookies in PHP for various purposes such as user authentication, preferences, and tracking.
+Sujit
+Sujit Tamang
+https://chatgpt.com/c/7de9a664-4040-41cb-bcbb-7d1dd4b8c798
+chatgpt.com

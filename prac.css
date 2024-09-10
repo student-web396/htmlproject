@@ -1,0 +1,31 @@
+.sujit{
+    
+    background-color:aqua;
+    width: 50%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 20%;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+   
+}
+input{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border-color: transparent;
+
+
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 10px;
+    border-radius: 5px;
+   
+}

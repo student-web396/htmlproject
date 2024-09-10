@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="game.css">
+    <body>
+        <button id='rose' onclick="alert('you won')" onmouseover="myfunction()">click me</button>
+        <script>
+            function myfunction(){
+               var ele = document.getElementById('rose');
+               setTimeout(()=>{
+                ele.style.marginTop = (Math.random() * window.innerHeight)+ "px";
+                ele.style.marginLeft =(Math.random() * window.innerHeight) + "px";
+               },150);
+            
+               
+               
+            }
+        
+            
+        </script>
+    </body>
+    </html>

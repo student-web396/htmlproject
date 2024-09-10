@@ -1,0 +1,18 @@
+#box{
+    color: blue;
+}
+#rahul{
+    color: red;
+}
+li{
+    display: inline;
+   padding-left: 6px;
+   padding-right: 6px;
+   
+
+}
+li:hover{
+    background-color: brown;
+    color: white;
+
+}

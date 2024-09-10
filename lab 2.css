@@ -1,0 +1,53 @@
+
+.sujit{
+    width: 20%;
+    height: 30%;
+    padding-right: 20px;
+    float: left;
+    
+}
+.swasti{
+    color:rgb(226, 226, 17);
+   
+}
+.rohi{
+    color: white;
+}
+h1{
+    display: inline;
+}
+.rose{
+    text-align: right;
+    margin-right: 5px;
+    color: white;
+
+}
+.ra{
+    background-color: yellow;
+    margin-left: 5px;
+    border-radius: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    
+}
+.roshan{
+    position: absolute;
+    background-color:rgb(4, 4, 15);
+    padding: 30px;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+}
+.paro{
+    text-align: justify;
+}
+
+
+
+
+
+   
+
+

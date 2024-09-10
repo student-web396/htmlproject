@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.rahul{
+    background-color: rgb(62, 100, 100);
+    color: aliceblue;
+    background-blend-mode: multiply;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    width: 100%;
+    height: 100px;
+    left: 50px;
+    right: 50px;
+    background-size: cover;
+    position: relative;
+    background-image:url("backimage.jpg")
+    
+    
+}
+.roshan{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 14, 14, 0.803);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

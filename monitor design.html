@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/monitor.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>monitor design</title>
+    <link type="text/css" rel="stylesheet" href="./monitor design_files/monitor.css"></head>
+    <body>
+        <div class="container">
+            <div class="nav-bar">
+                <h1 class="title">Moni<span>tor</span></h1>
+                <ul class="menu">
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">HOME</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Computer</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Laptop</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Products</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Contact us</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Search</a></li>
+                    <li><a href="http://127.0.0.1:5500/monitor.html#">Login</a></li>
+                </ul>
+            </div>
+            <div class="home">
+                <h1 class="rose">The <span>WINDOW</span> <br>to your digital world<span>!</span><p>Let's Explore...</p><button type="button">Buy now</button></h1>
+                <img src="./monitor design_files/images (1).jpeg" class="swasti">
+                
+                
+               
+                
+            </div>
+           
+        </div>
+
+
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
